@@ -6,5 +6,4 @@ def count_vowels(text):
     for i in new_text:
         if i in "aeiou": 
             new.append(i)
-        else: continue
     return len(new)
