@@ -1,0 +1,48 @@
+## 📝 오늘의 파이썬 클래스 문제: ⚔️ 게임 캐릭터와 직업 만들기
+모든 게임 캐릭터가 공통으로 갖는 속성과 행동을 GameCharacter 부모 클래스에 정의하고, 이를 상속받아 각 직업의 특징을 가진 Warrior와 Mage 자식 클래스를 만들어 보세요.
+
+1. 부모 클래스: GameCharacter
+__init__(self, name, hp, power):
+
+name(이름), hp(체력), power(공격력)를 인자로 받아 초기화합니다.
+
+attack(self, other_character):
+
+상대방(other_character)의 hp를 자신의 power만큼 감소시킵니다.
+
+f"{self.name}이(가) {other_character.name}에게 일반 공격을 가했습니다!" 라는 메시지를 출력합니다.
+
+show_status(self):
+
+f"{self.name}의 현재 체력: {self.hp}" 형식으로 현재 상태를 출력합니다.
+
+2. 자식 클래스 1: Warrior (GameCharacter 상속)
+__init__(self, name, hp, power, defense):
+
+name, hp, power와 함께 defense(방어력)를 추가로 받습니다.
+
+super().__init__(name, hp, power) 를 사용해 부모 클래스의 __init__을 먼저 호출해야 합니다.
+
+power_slash(self, other_character):
+
+전사의 고유 스킬입니다.
+
+상대방의 hp를 자신의 power의 1.5배 만큼 감소시킵니다.
+
+f"{self.name}이(가) {other_character.name}에게 파워 슬래시를 사용했습니다!" 라는 메시지를 출력합니다.
+
+3. 자식 클래스 2: Mage (GameCharacter 상속)
+__init__(self, name, hp, power, mana):
+
+name, hp, power와 함께 mana(마력)를 추가로 받습니다.
+
+마찬가지로 super().__init__(name, hp, power) 를 사용해 부모 클래스를 초기화해야 합니다.
+
+fireball(self, other_character):
+
+마법사의 고유 스킬입니다.
+
+상대방의 hp를 자신의 power의 2배 만큼 감소시킵니다.
+
+f"{self.name}이(가) {other_character.name}에게 파이어볼을 사용했습니다!" 라는 메시지를 출력합니다.
+
