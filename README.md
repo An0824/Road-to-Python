@@ -4,7 +4,7 @@
 
 ## 📂 폴더 구조
 
-- **Classes**: 클래스(Class) 개념 관련 연습 문제입니다.
+- **Classes**: 클래스(Class) 관련 연습 문제입니다.
 - **Functions**: 함수(Function) 관련 연습 문제입니다.
 
 ---
