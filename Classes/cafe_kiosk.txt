@@ -1,0 +1,36 @@
+## 📝 오늘의 파이썬 클래스 문제: ☕️ CafeKiosk 클래스 만들기
+간단한 카페 키오스크의 주문 시스템을 클래스로 만들어 보세요.
+
+요구사항:
+__init__(self):
+
+객체가 생성될 때, menu와 order라는 두 개의 인스턴스 변수를 초기화합니다.
+
+menu는 빈 딕셔너리({})로, order는 빈 리스트([])로 시작합니다.
+
+add_menu_item(self, item_name, price):
+
+menu 딕셔너리에 새로운 메뉴 아이템과 가격을 추가합니다.
+
+display_menu(self):
+
+menu에 있는 모든 아이템과 가격을 알아보기 쉽게 출력합니다.
+
+add_to_order(self, item_name):
+
+item_name을 인자로 받아, menu에 있는 상품이면 order 리스트에 추가합니다.
+
+성공 시, 주문 추가 성공 메시지를 출력합니다.
+
+만약 menu에 없는 상품이면, 메뉴에 없다는 메시지를 출력합니다.
+
+calculate_total(self):
+
+order 리스트에 담긴 모든 상품의 총가격을 계산하여 출력합니다.
+
+clear_order(self):
+
+order 리스트를 비워서 주문을 초기화합니다.
+
+주문이 초기화되었다는 메시지를 출력합니다.
+
