@@ -1,0 +1,31 @@
+## 📝 오늘의 클래스 문제: 🚗 하늘을 나는 자동차 만들기 (다중 상속)
+이번 문제는 땅을 달리는 LandVehicle 클래스와 하늘을 나는 AerialVehicle 클래스를 모두 상속받아, 두 가지 기능을 모두 가진 FlyingCar 클래스를 만드는 것입니다.
+
+1. 부모 클래스 1: LandVehicle
+__init__(self, speed):
+
+speed(속력)을 인자로 받아 초기화합니다.
+
+drive(self):
+
+땅에서 주행한다는 메시지를 출력합니다.
+
+2. 부모 클래스 2: AerialVehicle
+__init__(self, altitude):
+
+altitude(고도)를 인자로 받아 초기화합니다.
+
+fly(self):
+
+하늘을 비행한다는 메시지를 출력합니다.
+
+3. 자식 클래스: FlyingCar (LandVehicle, AerialVehicle 상속)
+__init__(self, name, speed, altitude):
+
+name(이름)과 함께, 두 부모 클래스의 속성인 speed와 altitude를 모두 인자로 받아 초기화합니다.
+
+힌트: super()는 다중 상속에서 복잡하게 동작할 수 있으니, 부모클래스명.__init__(self, ...) 형태로 각 부모의 __init__을 직접 호출하는 것이 더 명확할 수 있습니다.
+
+show_status(self):
+
+자동차의 이름, 현재 속력, 현재 고도를 모두 출력합니다.
