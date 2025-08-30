@@ -1,0 +1,37 @@
+## 📝 오늘의 클래스 문제: 🏦 거래 내역이 기록되는 은행 계좌
+입금, 출금 기능과 함께 모든 거래 내역을 리스트에 기록하는 BankAccount 클래스를 만들어 보세요.
+
+요구사항:
+__init__(self, owner_name, initial_deposit=0):
+
+owner_name(계좌주), initial_deposit(초기 입금액)을 인자로 받습니다.
+
+balance(잔액)와 transactions(거래 내역 리스트)라는 인스턴스 변수를 초기화합니다.
+
+초기 입금액이 있다면, 잔액을 업데이트하고 거래 내역에 "초기 입금" 기록을 추가합니다.
+
+deposit(self, amount):
+
+amount(입금액)가 0보다 클 경우에만 입금을 처리합니다.
+
+balance를 amount만큼 증가시키고, transactions 리스트에 입금 기록을 추가합니다.
+
+입금 완료 메시지를 출력합니다.
+
+withdraw(self, amount):
+
+amount(출금액)가 0보다 크고, 현재 balance보다 작거나 같을 경우에만 출금을 처리합니다.
+
+balance를 amount만큼 감소시키고, transactions 리스트에 출금 기록을 추가합니다.
+
+출금 완료 메시지를 출력합니다.
+
+출금에 실패하면(금액 부족 등), 출금 실패 메시지를 출력합니다.
+
+get_balance(self):
+
+현재 계좌의 주인과 잔액을 출력합니다.
+
+get_transaction_history(self):
+
+지금까지의 모든 거래 내역(transactions 리스트)을 순서대로 출력합니다.
