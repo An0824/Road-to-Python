@@ -1,0 +1,37 @@
+## 📝 오늘의 클래스 문제: 📦 상품 재고 관리하기
+간단한 상품 재고를 관리하는 Inventory 클래스를 만들어 보세요.
+
+요구사항:
+__init__(self):
+
+items라는 빈 딕셔너리({})를 인스턴스 변수로 가집니다.
+
+이 딕셔너리는 상품 이름을 key로, {'price': 가격, 'quantity': 수량} 형태의 또 다른 딕셔너리를 value로 가집니다.
+
+add_item(self, name, price, quantity):
+
+name(이름), price(가격), quantity(수량)를 인자로 받아 items에 추가합니다.
+
+만약 이미 있는 상품이면, 재고 수량만 quantity만큼 더해줍니다.
+
+상품이 추가/업데이트되었다는 메시지를 출력합니다.
+
+sell_item(self, name, quantity_to_sell):
+
+name(이름), quantity_to_sell(판매할 수량)을 인자로 받아 재고를 감소시킵니다.
+
+판매 조건 확인:
+
+상품이 items에 없는 경우
+
+판매할 수량(quantity_to_sell)이 현재 재고보다 많은 경우
+
+위 조건에 해당되면 판매 불가 메시지를 출력합니다.
+
+판매 성공 시:
+
+재고를 quantity_to_sell만큼 감소시키고, 판매 성공 메시지를 출력합니다.
+
+get_stock_info(self):
+
+현재 창고에 있는 모든 상품의 이름, 가격, 재고를 보기 쉽게 출력합니다.
